@@ -32,6 +32,7 @@ Requires:       python-gpustat
 Requires:       wf-recorder
 Requires:       matugen
 Requires:       grimblast
+Requires:       gjs
 
 Recommends:     ppd-service
 Suggests:       tuned-ppd
