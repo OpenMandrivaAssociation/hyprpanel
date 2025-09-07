@@ -1,11 +1,11 @@
-%global commit0 c203ffe80f4e7b68e22ba3fde0598622500f5add
+%global commit0 6385f2e15df908e0c13bed800f4b091300e5b981
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 
 %global debug_package %{nil}
 
 Name:           hyprpanel
 Version:        1.git%{shortcommit0}
-Release:        2
+Release:        1
 Summary:        A panel built for Hyprland with Astal
 License:        MIT
 URL:            https://github.com/Jas-SinghFSU/HyprPanel
