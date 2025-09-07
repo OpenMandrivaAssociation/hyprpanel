@@ -4,7 +4,7 @@
 %global debug_package %{nil}
 
 Name:           hyprpanel
-Version:        1~%{bumpver}.git%{shortcommit0}
+Version:        1.0.0.%{bumpver}~.git%{shortcommit0}
 Release:        1
 Summary:        A panel built for Hyprland with Astal
 License:        MIT
