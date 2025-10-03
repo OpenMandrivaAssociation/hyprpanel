@@ -1,3 +1,4 @@
+# Package is broken upstream as of 20251002
 %global commit0 6385f2e15df908e0c13bed800f4b091300e5b981
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global bumpver 1
