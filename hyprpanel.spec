@@ -11,7 +11,7 @@ Summary:        A panel built for Hyprland with Astal
 License:        MIT
 URL:            https://github.com/Jas-SinghFSU/HyprPanel
 Source0:        %{url}/archive/%{commit0}/%{name}-%{shortcommit0}.tar.gz
-Source1:	%{name}-vendor.tar.gz
+Source1:	%{name}-pnpm-offline-cache.tar.gz
 BuildRequires:  sass
 BuildRequires:  aylur-gtk-shell
 BuildRequires:  meson
@@ -36,6 +36,7 @@ Requires:       wf-recorder
 Requires:       matugen
 Requires:       grimblast
 Requires:       gjs
+Requires:       libsoup-gir3.0
 
 Recommends:     ppd-service
 Suggests:       tuned-ppd
@@ -57,9 +58,13 @@ Provides:       HyprPanel
 
 %prep
 %autosetup -n HyprPanel-%{commit0} -p1
+tar zxf %{S:1}
+rm -rf node_modules/astal
+ls
+mkdir -p node_modules/astal
+cp -ra %{_datadir}/astal/gjs/* node_modules/astal
 
 %build
-pnpm install --offline
 %meson
 %meson_build
 
