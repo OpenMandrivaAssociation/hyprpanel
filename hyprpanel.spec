@@ -36,7 +36,7 @@ Requires:       wf-recorder
 Requires:       matugen
 Requires:       grimblast
 Requires:       gjs
-Requires:       libsoup-gir3.0
+Requires:       lib64soup-gir3.0
 
 Recommends:     ppd-service
 Suggests:       tuned-ppd
