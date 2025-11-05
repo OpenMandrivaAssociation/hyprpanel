@@ -1,7 +1,7 @@
-# Package is broken upstream as of 20251002
-%global commit0 6385f2e15df908e0c13bed800f4b091300e5b981
+# Untested
+%global commit0 0a961ce8a959c521f41546af7f355e04adee5503
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global bumpver 1
+%global bumpver 3
 %global debug_package %{nil}
 
 Name:           hyprpanel
@@ -11,10 +11,12 @@ Summary:        A panel built for Hyprland with Astal
 License:        MIT
 URL:            https://github.com/Jas-SinghFSU/HyprPanel
 Source0:        %{url}/archive/%{commit0}/%{name}-%{shortcommit0}.tar.gz
+Source1:	%{name}-vendor.tar.gz
 BuildRequires:  sass
 BuildRequires:  aylur-gtk-shell
 BuildRequires:  meson
 BuildRequires:  gjs
+BuildRequires:	pnpm
 
 Requires:       bluez
 Requires:       sass
@@ -57,6 +59,7 @@ Provides:       HyprPanel
 %autosetup -n HyprPanel-%{commit0} -p1
 
 %build
+pnpm install --offline
 %meson
 %meson_build
 
