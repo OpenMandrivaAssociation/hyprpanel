@@ -6,7 +6,7 @@
 
 Name:           hyprpanel
 Version:        1.0.0.%{bumpver}~.git%{shortcommit0}
-Release:        1
+Release:        2
 Summary:        A panel built for Hyprland with Astal
 License:        MIT
 URL:            https://github.com/Jas-SinghFSU/HyprPanel
@@ -37,6 +37,7 @@ Requires:       matugen
 Requires:       grimblast
 Requires:       gjs
 Requires:       lib64soup-gir3.0
+Requires:       lib64gtksourceview-gir3.0
 
 Recommends:     ppd-service
 Suggests:       tuned-ppd
