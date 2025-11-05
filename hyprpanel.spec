@@ -1,7 +1,7 @@
 # Untested
 %global commit0 0a961ce8a959c521f41546af7f355e04adee5503
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global bumpver 3
+%global bumpver 2
 %global debug_package %{nil}
 
 Name:           hyprpanel
