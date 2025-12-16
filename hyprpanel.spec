@@ -6,7 +6,7 @@
 
 Name:           hyprpanel
 Version:        1.0.0.%{bumpver}~.git%{shortcommit0}
-Release:        2
+Release:        3
 Summary:        A panel built for Hyprland with Astal
 License:        MIT
 URL:            https://github.com/Jas-SinghFSU/HyprPanel
